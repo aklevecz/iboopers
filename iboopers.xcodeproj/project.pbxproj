@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5703827A2C6F0F3C00F7E730 /* ProfileSidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570382792C6F0F3C00F7E730 /* ProfileSidebarView.swift */; };
+		5703827C2C74659D00F7E730 /* EggDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5703827B2C74659D00F7E730 /* EggDetailView.swift */; };
+		5735BFDE2C6A839B001470E0 /* OldPasskeyAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735BFDD2C6A839B001470E0 /* OldPasskeyAuthenticationManager.swift */; };
+		5735BFE22C6AF53B001470E0 /* EggManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5735BFE12C6AF53B001470E0 /* EggManager.swift */; };
+		57464E2E2C784CA000B9794E /* boop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 57464E2D2C784CA000B9794E /* boop.mp3 */; };
+		57DD37E62C6087670018F08E /* iboopersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD37E52C6087670018F08E /* iboopersApp.swift */; };
+		57DD37E82C6087670018F08E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD37E72C6087670018F08E /* ContentView.swift */; };
+		57DD37EA2C6087670018F08E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DD37E92C6087670018F08E /* Assets.xcassets */; };
+		57DD37ED2C6087670018F08E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DD37EC2C6087670018F08E /* Preview Assets.xcassets */; };
+		57DD37F42C6087B30018F08E /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD37F32C6087B30018F08E /* ModelData.swift */; };
+		57DD37F62C6087E20018F08E /* Egg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD37F52C6087E20018F08E /* Egg.swift */; };
+		57DD37FA2C608D380018F08E /* eggs.json in Resources */ = {isa = PBXBuildFile; fileRef = 57DD37F92C608D380018F08E /* eggs.json */; };
+		57DD37FC2C612B360018F08E /* NFCReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD37FB2C612B360018F08E /* NFCReader.swift */; };
+		57DD37FE2C612CAC0018F08E /* BoopedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD37FD2C612CAC0018F08E /* BoopedView.swift */; };
+		57DD38012C6273820018F08E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD38002C6273820018F08E /* ProfileView.swift */; };
+		57DD38032C6275220018F08E /* BoopingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD38022C6275220018F08E /* BoopingView.swift */; };
+		57DD38052C6285B00018F08E /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD38042C6285B00018F08E /* CustomButton.swift */; };
+		57DD38082C629F350018F08E /* HeadlineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD38072C629F350018F08E /* HeadlineText.swift */; };
+		57DD380A2C62CF0F0018F08E /* PasskeyAuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD38092C62CF0F0018F08E /* PasskeyAuthenticationManager.swift */; };
+		57DD380C2C62CF330018F08E /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DD380B2C62CF330018F08E /* AuthenticationView.swift */; };
+		57E3E22B2C632E2900C099C7 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E3E22A2C632E2900C099C7 /* UserManager.swift */; };
+		57E3E22D2C64465500C099C7 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E3E22C2C64465500C099C7 /* AuthenticationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		570382792C6F0F3C00F7E730 /* ProfileSidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSidebarView.swift; sourceTree = "<group>"; };
+		5703827B2C74659D00F7E730 /* EggDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggDetailView.swift; sourceTree = "<group>"; };
+		5735BFDD2C6A839B001470E0 /* OldPasskeyAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldPasskeyAuthenticationManager.swift; sourceTree = "<group>"; };
+		5735BFE12C6AF53B001470E0 /* EggManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggManager.swift; sourceTree = "<group>"; };
+		57464E2D2C784CA000B9794E /* boop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boop.mp3; sourceTree = "<group>"; };
+		57DD37E22C6087670018F08E /* iboopers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iboopers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57DD37E52C6087670018F08E /* iboopersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iboopersApp.swift; sourceTree = "<group>"; };
+		57DD37E72C6087670018F08E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		57DD37E92C6087670018F08E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		57DD37EC2C6087670018F08E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57DD37F32C6087B30018F08E /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		57DD37F52C6087E20018F08E /* Egg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Egg.swift; sourceTree = "<group>"; };
+		57DD37F92C608D380018F08E /* eggs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = eggs.json; sourceTree = "<group>"; };
+		57DD37FB2C612B360018F08E /* NFCReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCReader.swift; sourceTree = "<group>"; };
+		57DD37FD2C612CAC0018F08E /* BoopedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoopedView.swift; sourceTree = "<group>"; };
+		57DD37FF2C612F5A0018F08E /* iboopers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iboopers.entitlements; sourceTree = "<group>"; };
+		57DD38002C6273820018F08E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		57DD38022C6275220018F08E /* BoopingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoopingView.swift; sourceTree = "<group>"; };
+		57DD38042C6285B00018F08E /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		57DD38062C628BED0018F08E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		57DD38072C629F350018F08E /* HeadlineText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadlineText.swift; sourceTree = "<group>"; };
+		57DD38092C62CF0F0018F08E /* PasskeyAuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasskeyAuthenticationManager.swift; sourceTree = "<group>"; };
+		57DD380B2C62CF330018F08E /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		57E3E22A2C632E2900C099C7 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		57E3E22C2C64465500C099C7 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57DD37DF2C6087670018F08E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5735BFDC2C6A8380001470E0 /* archive_but_working */ = {
+			isa = PBXGroup;
+			children = (
+				5735BFDD2C6A839B001470E0 /* OldPasskeyAuthenticationManager.swift */,
+			);
+			path = archive_but_working;
+			sourceTree = "<group>";
+		};
+		57DD37D92C6087670018F08E = {
+			isa = PBXGroup;
+			children = (
+				57DD37E42C6087670018F08E /* iboopers */,
+				57DD37E32C6087670018F08E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		57DD37E32C6087670018F08E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57DD37E22C6087670018F08E /* iboopers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57DD37E42C6087670018F08E /* iboopers */ = {
+			isa = PBXGroup;
+			children = (
+				57DD38062C628BED0018F08E /* Info.plist */,
+				57DD37FF2C612F5A0018F08E /* iboopers.entitlements */,
+				57DD37E52C6087670018F08E /* iboopersApp.swift */,
+				57DD37E72C6087670018F08E /* ContentView.swift */,
+				57DD38022C6275220018F08E /* BoopingView.swift */,
+				57DD37FD2C612CAC0018F08E /* BoopedView.swift */,
+				57DD380B2C62CF330018F08E /* AuthenticationView.swift */,
+				57DD38002C6273820018F08E /* ProfileView.swift */,
+				570382792C6F0F3C00F7E730 /* ProfileSidebarView.swift */,
+				57E3E22C2C64465500C099C7 /* AuthenticationManager.swift */,
+				5703827B2C74659D00F7E730 /* EggDetailView.swift */,
+				57DD38092C62CF0F0018F08E /* PasskeyAuthenticationManager.swift */,
+				57E3E22A2C632E2900C099C7 /* UserManager.swift */,
+				5735BFE12C6AF53B001470E0 /* EggManager.swift */,
+				5735BFDC2C6A8380001470E0 /* archive_but_working */,
+				57DD37FB2C612B360018F08E /* NFCReader.swift */,
+				57DD38072C629F350018F08E /* HeadlineText.swift */,
+				57DD38042C6285B00018F08E /* CustomButton.swift */,
+				57DD37F32C6087B30018F08E /* ModelData.swift */,
+				57DD37F92C608D380018F08E /* eggs.json */,
+				57DD37F52C6087E20018F08E /* Egg.swift */,
+				57DD37E92C6087670018F08E /* Assets.xcassets */,
+				57DD37EB2C6087670018F08E /* Preview Content */,
+			);
+			path = iboopers;
+			sourceTree = "<group>";
+		};
+		57DD37EB2C6087670018F08E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				57464E2D2C784CA000B9794E /* boop.mp3 */,
+				57DD37EC2C6087670018F08E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		57DD37E12C6087670018F08E /* iboopers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57DD37F02C6087670018F08E /* Build configuration list for PBXNativeTarget "iboopers" */;
+			buildPhases = (
+				57DD37DE2C6087670018F08E /* Sources */,
+				57DD37DF2C6087670018F08E /* Frameworks */,
+				57DD37E02C6087670018F08E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iboopers;
+			productName = iboopers;
+			productReference = 57DD37E22C6087670018F08E /* iboopers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57DD37DA2C6087670018F08E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					57DD37E12C6087670018F08E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 57DD37DD2C6087670018F08E /* Build configuration list for PBXProject "iboopers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 57DD37D92C6087670018F08E;
+			productRefGroup = 57DD37E32C6087670018F08E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57DD37E12C6087670018F08E /* iboopers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		57DD37E02C6087670018F08E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DD37ED2C6087670018F08E /* Preview Assets.xcassets in Resources */,
+				57DD37EA2C6087670018F08E /* Assets.xcassets in Resources */,
+				57464E2E2C784CA000B9794E /* boop.mp3 in Resources */,
+				57DD37FA2C608D380018F08E /* eggs.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57DD37DE2C6087670018F08E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DD37E82C6087670018F08E /* ContentView.swift in Sources */,
+				57DD37E62C6087670018F08E /* iboopersApp.swift in Sources */,
+				57DD380C2C62CF330018F08E /* AuthenticationView.swift in Sources */,
+				57E3E22B2C632E2900C099C7 /* UserManager.swift in Sources */,
+				5735BFDE2C6A839B001470E0 /* OldPasskeyAuthenticationManager.swift in Sources */,
+				5703827C2C74659D00F7E730 /* EggDetailView.swift in Sources */,
+				57DD38082C629F350018F08E /* HeadlineText.swift in Sources */,
+				57DD38052C6285B00018F08E /* CustomButton.swift in Sources */,
+				57DD37F42C6087B30018F08E /* ModelData.swift in Sources */,
+				57DD37FC2C612B360018F08E /* NFCReader.swift in Sources */,
+				57DD380A2C62CF0F0018F08E /* PasskeyAuthenticationManager.swift in Sources */,
+				5703827A2C6F0F3C00F7E730 /* ProfileSidebarView.swift in Sources */,
+				57E3E22D2C64465500C099C7 /* AuthenticationManager.swift in Sources */,
+				57DD37FE2C612CAC0018F08E /* BoopedView.swift in Sources */,
+				57DD38032C6275220018F08E /* BoopingView.swift in Sources */,
+				5735BFE22C6AF53B001470E0 /* EggManager.swift in Sources */,
+				57DD38012C6273820018F08E /* ProfileView.swift in Sources */,
+				57DD37F62C6087E20018F08E /* Egg.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		57DD37EE2C6087670018F08E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		57DD37EF2C6087670018F08E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		57DD37F12C6087670018F08E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iboopers/iboopers.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iboopers/Preview Content\"";
+				DEVELOPMENT_TEAM = L7V38L8N6S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iboopers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iBoopers;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Reading NFC eggs hidden in scavenger hunts";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yaytso.iboopers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		57DD37F22C6087670018F08E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iboopers/iboopers.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"iboopers/Preview Content\"";
+				DEVELOPMENT_TEAM = L7V38L8N6S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iboopers/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iBoopers;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
+				INFOPLIST_KEY_NFCReaderUsageDescription = "Reading NFC eggs hidden in scavenger hunts";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = yaytso.iboopers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57DD37DD2C6087670018F08E /* Build configuration list for PBXProject "iboopers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57DD37EE2C6087670018F08E /* Debug */,
+				57DD37EF2C6087670018F08E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57DD37F02C6087670018F08E /* Build configuration list for PBXNativeTarget "iboopers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57DD37F12C6087670018F08E /* Debug */,
+				57DD37F22C6087670018F08E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57DD37DA2C6087670018F08E /* Project object */;
+}

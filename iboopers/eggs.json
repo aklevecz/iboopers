@@ -1,0 +1,4 @@
+[
+    {"id":"eggerton", "name":"Eggerton", "description": "This is Eggerton he is the best little egg", "isFound": false},
+    {"id":"eggnacious", "name":"Eggnacious", "description": "This is Eggnacious, what a noble egg he is", "isFound": false}
+]

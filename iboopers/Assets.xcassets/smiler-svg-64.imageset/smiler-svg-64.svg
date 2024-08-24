@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Layer_2-2">
+    <circle id="bg" cx="32" cy="32" r="32" fill="#fff"/>
+  </g>
+  <g>
+    <ellipse cx="32" cy="32" rx="21.6" ry="19.8" fill="#1a2f2c" stroke="#fff" stroke-miterlimit="14" stroke-width="1.89"/>
+    <circle id="left" cx="21.07" cy="29.94" r="3.21" fill="#1a2f2c" stroke="#fff" stroke-width="1.29"/>
+    <circle id="right" cx="42.16" cy="29.94" r="3.21" fill="#1a2f2c" stroke="#fff" stroke-width="1.29"/>
+    <path d="M18.37,37.4s3.34,9.64,13.63,9.64,13.5-9.64,13.5-9.64" fill="#1a2f2c" stroke="#fff" stroke-miterlimit="14" stroke-width="1.89"/>
+  </g>
+</svg>

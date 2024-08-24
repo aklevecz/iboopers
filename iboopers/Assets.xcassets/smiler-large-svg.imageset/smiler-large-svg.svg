@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <ellipse cx="256" cy="256" rx="234" ry="214.5" fill="#1a2f2c" stroke="#fff" stroke-miterlimit="14" stroke-width="20.48"/>
+  <circle id="left" cx="137.61" cy="233.71" r="34.82" fill="#1a2f2c" stroke="#fff" stroke-width="13.93"/>
+  <circle id="right" cx="366.04" cy="233.71" r="34.82" fill="#1a2f2c" stroke="#fff" stroke-width="13.93"/>
+  <path d="M108.36,314.5s36.21,104.46,147.64,104.46,146.25-104.46,146.25-104.46" fill="#1a2f2c" stroke="#fff" stroke-miterlimit="14" stroke-width="20.48"/>
+</svg>
