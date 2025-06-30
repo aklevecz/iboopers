@@ -81,7 +81,7 @@ struct BoopedView: View {
         .background(Color(UIColor.systemBackground))
         .onAppear {
             playBoopSound()
-            eggMessage = "Looks like you already have this egg. Nice try!"
+            eggMessage = "Checking booooooop..."
 
             if boopContent.starts(with: "iboopers://0xegg") {
                 let (bid, signature) = extractParameters(from: boopContent)
@@ -107,6 +107,11 @@ struct BoopedView: View {
                             print("Successfully collected egg:")
                             print("  Egg: \(collectedEggInfo.egg)")
                             print("  Message: \(collectedEggInfo.message)")
+                            let boopResponse = try await EggManager.shared.getBoops()
+                            await MainActor.run {
+                                print("BOOP RESPINSE \(boopResponse.boops)")
+                                EggManager.shared.boops = boopResponse.boops
+                            }
                         } catch EggErrors.invalidEgg {
                             print("Invalid egg error")
                             eggMessage = EggErrors.invalidEgg.localizedDescription

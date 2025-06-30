@@ -39,20 +39,28 @@ struct EggDetailView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 250, height: 250)
                     
-
-                    Text("\(color.capitalized)")
-                        .font(.headline)
-                    if let points = colorPoints[color] {
-
+                    HStack(spacing:30) {
+                        Spacer()
                         VStack {
-                            Text("\(points)")
+                            Text("\(color.capitalized)")
                                 .font(.system(size:40, weight:.bold))
-                                .foregroundColor(.green)
-                            Text("Points")
+                            Text("Type")
                                 .font(.system(size:20))
-                                .foregroundStyle(.green)
                         }
+                        if let points = colorPoints[color] {
+                            VStack {
+                                Text("\(points)")
+                                    .font(.system(size:40, weight:.bold))
+                                    .foregroundColor(.green)
+                                Text("Points")
+                                    .font(.system(size:20))
+                                    .foregroundStyle(.green)
+                            }
+                        }
+                        Spacer()
                     }
+                    .frame(maxWidth: .infinity)
+                    .padding(.bottom,20)
                     
                     VStack {
                         Text("Acquired")
@@ -60,8 +68,6 @@ struct EggDetailView: View {
                         Text("\(formatDate(createdAt))")
                             .font(.subheadline)
                     }
-
-                    
                 }
                 .padding()
                 Spacer()

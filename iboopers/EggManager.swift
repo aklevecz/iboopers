@@ -7,8 +7,11 @@
 
 import Foundation
 
+@Observable
 class EggManager {
     static let shared = EggManager()
+    public var boops: [BoopD1] = []
+    public var computedEggPoints = 0
     private var boopsCache: [BoopD1] = []
     private let cacheKey = "cachedBoops"
     private let cacheExpirationInterval: TimeInterval = 5 * 60 // 5 minutes
@@ -21,7 +24,10 @@ class EggManager {
     private func loadCacheFromUserDefaults() {
         if let cachedBoops = loadFromLocalStorage() {
             boopsCache = cachedBoops
+            computedEggPoints = calculateEggPoints(from: boopsCache)
             lastFetchTime = Date() // Assume it was just fetched when loading from cache
+        } else {
+            computedEggPoints = 0
         }
     }
 
@@ -90,6 +96,9 @@ class EggManager {
         lastFetchTime = Date()
         saveToLocalStorage(boops: json.boops)
         
+        computedEggPoints = calculateEggPoints(from: json.boops)
+        print("points : \(computedEggPoints)")
+        
         return BoopsResponse(boops: json.boops)
     }
 
@@ -116,6 +125,17 @@ class EggManager {
             print("Failed to load boops from local storage: \(error)")
             return nil
         }
+    }
+    
+    func calculateEggPoints(from boops: [BoopD1]) -> Int {
+        var totalPoints = 0
+        for boop in boops {
+            let color = String(boop.id.split(separator: "-")[0])
+            if let points = colorPoints[color] {
+                totalPoints += points
+            }
+        }
+        return totalPoints
     }
 }
 

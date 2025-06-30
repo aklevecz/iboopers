@@ -91,6 +91,8 @@ struct BoopingView: View {
 //                        showBoopedView = true
 //                    }
 //                }
+        
+        // DEPRECATED - THE SHEET IS PRESENTED IN THE PARENT CONTENTVIEW NOW
             .sheet(isPresented: $showTagDetail) {
                 if let content = boopContent {
                     BoopedView(boopContent: content)

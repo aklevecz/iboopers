@@ -35,85 +35,83 @@ struct AuthenticationView: View {
 
 
     var body: some View {
-        ZStack {
-            VStack {
-                if let currentUser = userManager.currentUser {
-                    ProfileView().padding()
-                } else {
-                    HeadlineText(content:"Got Boop?")
-                    
-                    Spacer()
-                    
-                    Image("smiler-large-svg").resizable().frame(width:200, height:200)
-                        .rotationEffect(.degrees(rotationAngle)) // Apply rotation effect
-                        .animation(isAuthing ? Animation.linear(duration: 1).repeatForever(autoreverses: false) : .default, value: rotationAngle) // Animate rotation
-                        .onAppear {
-                            if isAuthing {
-                                rotationAngle = 360
-                            }
-                        }
-                        .onChange(of: isAuthing) { _, newValue in
-                            if newValue {
-                                rotationAngle = 360
-                            } else {
-                                rotationAngle = 0
-                            }
-                        }
-                    
-                    Text(!isAuthing ? "Find a booping card to begin your booping journey" : "Checking your boop...")
-                        .font(.system(size: 34, weight: .bold, design: .rounded ))
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .multilineTextAlignment(.center)
-                    //.multilineTextAlignment(.center)
-                        .padding(50)
-                    
-                    Spacer()
-                    
-                    // CustomButton(title:"PASSKEY") {
-                    //     PasskeyAuthenticationManager.shared.registerNewAccount(username: "Meepo", uuid: "hepno")
-                    // }
-                    Text("or Login if you already created a Passkey")
-                        .padding(.horizontal, 100)
-                        .multilineTextAlignment(.center)
-                    CustomButton(title:"Login") {
-                        isAuthing = true
-                        Task {
-                            do {
-                                try await PasskeyAuthenticationManager.shared.signIn()
-                                isAuthing = false
-                            } catch {
-                                print("ERROR IN LOGIN: \(error.localizedDescription)")
-                                showingAlert = true
-                                errorMessage = error.localizedDescription
-                                isAuthing = false
-                            }
-                        }
-                    }
-                    .padding(.bottom, 50)
-                    .disabled(isAuthing)
-                    
-                }
-                
- 
-            }
-        }
-        .onAppear {
-            handleURLIfPresent()
-        }
-        .onChange(of: urlData) { _, _ in
-            handleURLIfPresent()
-        }
-        .alert(isPresented: $showingAlert) {
-            Alert(
-                title: Text("Error"),
-                message: Text(errorMessage ?? "An unknown error occurred"),
-                dismissButton: .default(Text("OK"))
-            )
-        }
-//        .onChange(of: authManager.errorMessage) { _, newError in
-//            showingAlert = newError != nil
-//        }
-    }
+           GeometryReader { geometry in
+               ScrollView {
+                   VStack {
+                       if let currentUser = userManager.currentUser {
+                           ProfileView().padding()
+                       } else {
+                           HeadlineText(content:"Got Boop?")
+                               .padding(.top, geometry.safeAreaInsets.top)
+
+                           Spacer()
+
+                           Image("smiler-large-svg")
+                               .resizable()
+                               .frame(width: geometry.size.width / 2, height: geometry.size.width / 2)
+                               .rotationEffect(.degrees(rotationAngle))
+                               .animation(isAuthing ? Animation.linear(duration: 1).repeatForever(autoreverses: false) : .default, value: rotationAngle)
+                               .onAppear {
+                                   if isAuthing {
+                                       rotationAngle = 360
+                                   }
+                               }
+                               .onChange(of: isAuthing) { _, newValue in
+                                   if newValue {
+                                       rotationAngle = 360
+                                   } else {
+                                       rotationAngle = 0
+                                   }
+                               }
+
+                           Text(!isAuthing ? "Find a booping card to begin your booping journey" : "Checking your boop...")
+                               .font(.system(size: 34, weight: .bold, design: .rounded ))
+                               .frame(maxWidth: .infinity, alignment: .center)
+                               .multilineTextAlignment(.center)
+                               .padding()
+
+                           Spacer()
+
+                           Text("or Login if you already created a Passkey")
+                               .padding(.horizontal, 100)
+                               .multilineTextAlignment(.center)
+                           CustomButton(title:"Login") {
+                               isAuthing = true
+                               Task {
+                                   do {
+                                       try await PasskeyAuthenticationManager.shared.signIn()
+                                       isAuthing = false
+                                   } catch {
+                                       print("ERROR IN LOGIN: \(error.localizedDescription)")
+                                       showingAlert = true
+                                       errorMessage = error.localizedDescription
+                                       isAuthing = false
+                                   }
+                               }
+                           }
+                           .padding(.bottom, 50)
+                           .disabled(isAuthing)
+                       }
+                   }
+                   .frame(minHeight: geometry.size.height)
+                   .padding(.top, 30)
+               }
+           }
+           .edgesIgnoringSafeArea(.top)
+           .onAppear {
+               handleURLIfPresent()
+           }
+           .onChange(of: urlData) { _, _ in
+               handleURLIfPresent()
+           }
+           .alert(isPresented: $showingAlert) {
+               Alert(
+                   title: Text("Error"),
+                   message: Text(errorMessage ?? "An unknown error occurred"),
+                   dismissButton: .default(Text("OK"))
+               )
+           }
+       }
 
     private func handleURLIfPresent() {
 

@@ -16,6 +16,14 @@ struct ContentView: View {
     @State private var showBoopedView = false
     let nfcReaderWriter = NFCReaderWriter()
 
+    init() {
+        // Set the background color of the tab bar to clear
+        UITabBar.appearance().backgroundColor = .clear
+        // If you want to remove the top border of the tab bar
+        UITabBar.appearance().shadowImage = UIImage()
+        UITabBar.appearance().backgroundImage = UIImage()
+    }
+    
     var body: some View {
         TabView(selection: $selectedTab) {
             BoopingView(showBoopedView: $showBoopedView, boopContent: $boopContent)
